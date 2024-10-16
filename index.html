@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Base Apparel coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gradient-to-light font-serif">
+    <!-- Global container -->
+    <div
+      class="flex h-full md:h-screen bg-gradient-to-mid items-center lg:pl-52 md:pl-10 p-4 text-center md:text-start md:justify-start justify-center"
+    >
+      <!-- Decription  -->
+      <div class="max-w-xl flex flex-col gap-6">
+        <!-- logo -->
+        <img src="images/logo.svg" class="max-w-[170px] mb-10" alt="" />
+        <!-- Hero mobile image -->
+        <img src="images/hero-mobile.jpg" class="block md:hidden" alt="" />
+        <!-- Decription -->
+        <h1 class="md:text-6xl text-5xl tracking-widest max-w-xs uppercase">
+          <span class="font-light text-desaturatedRed"> We're </span> coming
+          soon
+        </h1>
+        <p class="max-w-sm text-desaturatedRed">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <!-- FORM -->
+        <form action="" class="relative">
+          <!-- Input -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            class="border-2 w-full rounded-full py-3 px-4 z-10 text-linear2 outline-linear1 border-linear1 mb-3 email-input"
+          />
+          <!-- Error icon -->
+          <img
+            src="images/icon-error.svg"
+            class="absolute top-3 right-20 error-icon hidden"
+            alt=""
+          />
+          <!-- Submit Button -->
+          <button
+            class="bg-gradient-to-mid bg-green-700 py-4 rounded-full absolute z-20 shadow-linear2 hover:shadow-2xl px-8 -right-1 top-0"
+          >
+            <!-- Button icon -->
+            <img src="images/icon-arrow.svg" class="z-10" alt="" />
+          </button>
+          <!-- Error text -->
+          <label for="email" class="ml-4 text-softRed error-text hidden"
+            >Please provide a valid email</label
+          >
+        </form>
+      </div>
+      <!-- Mobile hero Image -->
+
+      <img
+        src="images/hero-desktop.jpg"
+        class="h-screen absolute right-0 top-0 md:block hidden"
+        alt=""
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
